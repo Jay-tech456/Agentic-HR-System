@@ -18,7 +18,7 @@ from utils.utils import AgentState
 
 class Agent(): 
     def __init__(self):
-        self.mistral_model = ChatMistralAI(model="mistral-large-latest", temperature=0, api_key="ERbtRhtyGei4jY4AXn4QkrWSfGzlpLbP")
+        self.mistral_model = ChatMistralAI(model="mistral-large-latest", temperature=0, api_key=os.getenv("MISTRAL_API_KEY"))
 
         # embeddings = OllamaEmbeddings(model="nomic-embed-text")
 

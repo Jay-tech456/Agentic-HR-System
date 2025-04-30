@@ -11,7 +11,7 @@ CORS(app, origins="http://localhost:3000", supports_credentials=True)
 
 socketio = SocketIO(app, cors_allowed_origins="http://localhost:3000")
 
-DATABASE_URL = "cockroachdb://manjesh:1OmFjfPEIF65KmjvtUaUNA@goodly-leaper-10740.j77.aws-us-west-2.cockroachlabs.cloud:26257/defaultdb?sslmode=verify-full"
+DATABASE_URL = ""
 engine = create_engine(DATABASE_URL)
 
 @app.route('/data', methods=['GET'])
@@ -45,7 +45,7 @@ def emit_data():
 def background_thread():
     while True:
         emit_data()
-        time.sleep(5)  # Every 5 seconds
+        time.sleep(5) 
 
 # Start background thread
 threading.Thread(target=background_thread, daemon=True).start()
