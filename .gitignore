@@ -1,0 +1,18 @@
+/node_modules
+
+.pnp
+.pnp.js
+# testing
+/coverage
+jupyterNotebook/.env
+
+Client/my-app/node_modules
+Demo/Backend/CockroachDB/__pychache__/*
+Demo/Backend/SingleAgent/__pychache__/*
+Demo/Backend/SingleAgent/.env
+Demo/Backend/tools/__pychache__/*
+Demo/Backend/tools/.env
+Demo/Backend/utils/__pychache__/*
+Demo/Backend/Worker/__pychache__/*
+Demo/Backend/utils/__pychache__/*
+cockroach-data/*
