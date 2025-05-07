@@ -32,6 +32,7 @@ def ask_agent():
         return jsonify({"response": response_text})
     
     except Exception as e:
+        print(f"Error: {str(e)}")
         return jsonify({"error": str(e)}), 500
 
 if __name__ == '__main__':

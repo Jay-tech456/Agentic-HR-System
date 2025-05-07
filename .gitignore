@@ -6,6 +6,9 @@
 /coverage
 jupyterNotebook/.env
 
+jupyterNotebook/__pycache__/*
+jupyterNotebook/prompts/__pycache__/*
+
 Client/my-app/node_modules
 Demo/Backend/CockroachDB/__pychache__/*
 Demo/Backend/SingleAgent/__pychache__/*
